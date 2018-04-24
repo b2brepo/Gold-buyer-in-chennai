@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Page Wonder - Start Bootstrap Template</title>
+    <title>Gold Buyer in Chennai</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -142,9 +142,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="mt-5 py-5">
-      <div class="container">
-        <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2018</p>
+    <footer class="mt-5 py-5 container-fluid">
+      <div class="row">
+        <div class="col-lg-6 map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.281769739411!2d80.20348531420116!3d13.017720217388199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52673c22afba99%3A0xa137b357ee4ddd8b!2sGOLD+BUYER+IN+CHENNAI!5e0!3m2!1sen!2sin!4v1524542580574" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h3>CONTACT US</h3>
+          <p>9, 2ND FLR 1ST OFFICE,<br>
+            JN SALAI ROAD, EKKATTUTHANGAL,<br>
+            CHENNAI - 600032<br>
+            NEAR GUINDY. LM : EKKATTUTHANGAL (CITI BANK ATM BUILDIND)</p>
+          <h3>CONTACT: +91 8939112304, +91-44-22251180
+
+            EMAIL: GOLDBUYERINCHENNAI@GMAIL.COM</h3>
+        </div>
       </div>
       <!-- /.container -->
     </footer>
@@ -171,6 +183,19 @@
         $('.stop').on('click', function() {
           owl.trigger('stop.owl.autoplay')
         })
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 100) {
+            jQuery('#back-top').fadeIn();
+          } else {
+            jQuery('#back-top').fadeOut();
+          }
+        });
+        jQuery('#back-top a').click(function () {
+          jQuery('body,html').stop(false, false).animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
       })
     </script>
   </body>

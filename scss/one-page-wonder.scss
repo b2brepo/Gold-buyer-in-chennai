@@ -8,7 +8,7 @@
 @import "masthead.scss";
 @import "bootstrap-overrides.scss";
 body *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
     background-image: url(../img/bg.jpg);
@@ -29,6 +29,9 @@ body{
         background-color: #FFC107;
         box-shadow: 0 0 20px 0 black;
         color: black;
+        iframe{
+            box-shadow: 0 0 20px 0 black;
+        }
     }
 }
 
@@ -55,6 +58,7 @@ header.masthead{
     height: 100vh;
     background: linear-gradient(0deg,#FFEB3B 0,#FF9800 100%);
     color: var(--gray-dark);
+    padding-top: 120px;
     .bg-circle{
         background: linear-gradient(0deg,#FFEB3B 0,#FF9800 100%);
     }
