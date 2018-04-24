@@ -157,6 +157,29 @@ body * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body > section > .container.text-justify {
+  background: linear-gradient(0deg, #ffeb3bb0 0, #ff9800 100%);
+  box-shadow: 0 0 20px 0 black;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+body > section > .container.text-justify > h1 {
+  padding-top: 50px;
+}
+
+body footer {
+  background-color: #FFC107;
+  box-shadow: 0 0 20px 0 black;
+  color: black;
+}
+
 nav.navbar-custom {
   background-color: #FFC107;
   box-shadow: 0 0 20px 0 black;
@@ -203,6 +226,7 @@ header.masthead .btn-primary:hover {
   background: #ffb816 !important;
 }
 
-header.masthead .owl-carousel img {
+header.masthead .owl-carousel .item {
   width: 90vw;
+  margin: auto;
 }
